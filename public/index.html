@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>local database website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+       <h1>RV & Group</h1> 
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="login.html">Login</a>
+         <a href="signup.html">signup</a>
+         <a href="Dashboard.html">dashboard</a>
+    </nav>
+             </div>
+     </header>
+    
+   <div class="container">
+        <!-- This is a comment in HTML -->
+         <section class="Hero">
+            <h2>Bulding future website of the web</h2>
+            <p>this is a simple ,clean,and modern webpage.</p>
+            <a href="services" class=" cta-btn">Learn More</a>
+        </section>
+        <!-- services section -->
+        <section id="services">
+            <h3>Our Services</h3>
+            <p>This section contains information about the services offered.</p>
+<hr>
+            <ul>
+                <li><strong>Web Design</strong> - create beautiful layouts</li>
+                <li><strong>Web Development</strong> - turning designs into working code.</li>
+                <li><strong>SEO Optimization</strong> - Getting your page found by search engines.</li>
+            </ul>
+        </section>
+        <section id="contact">
+            <h2>contact</h2>
+            <!--the action points to our node.js server route-->
+            <form action="/submit" method="POST">
+                <label for="name">Name:</label><br>
+                <input type="text"  id="name" name="name" placeholder="Your Name"   required>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+        </div>
+        <!-- footer section -->
+        <footer>
+            <p>&copy; 2026 RV. All rights reserved.</p>
+        </footer>
+          </div>
+     <script src="script.js"></script>
+</body>
+</html>

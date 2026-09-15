@@ -1,0 +1,136 @@
+/*basic  styling for the page*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+    background-color: #b6c9f4;
+    color: #690890;
+    line-height: 1.6;
+}
+
+nav{
+    background-color: #1c252f;
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+nav h1{
+    color: #e48686;
+    font-size: 20px;
+}
+nav div a, nav button{
+color: #501e4a;
+text-decoration: none;
+margin-left: 20px;
+font-weight: 500;
+transition: color 0.3 ease;
+background: none;
+border: none;
+cursor: pointer;
+font-size: 16px;
+}
+nav div a:hover, nav button:hover {
+    color:#3498db;
+}
+container{
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+    }
+
+.hero{
+    background: linear-gradient(135deg, #2c3e50,#3498db);
+    color: #2e0e0e;
+    padding: 60px 40px;
+    text-align: center;
+    border-radius: 8px;
+margin-bottom: 40px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+h1 {
+    color: #e8491d;
+    text-align: center;
+    
+}
+nav {
+    display: flex;
+    justify-content: right;
+    background: #72d5ee;
+    text-align: center;
+    color: #82be0a;
+    padding: 0px;
+}
+nav a {
+    color: #d5f890;
+    text-decoration: none;
+    padding: 10px 10px;
+    font-weight: bold;
+
+}
+nav a:hover {
+    background: #d5f890;
+    color: #9777f0;
+    border-radius: 5px;
+}
+.container {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    background: #fbcdef;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(138, 135, 135, 0.1);
+    }
+    .hero{
+        background:#e8491d;
+        color:#f3d1d1;
+        padding: 10px 10px;
+        text-align: center;
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+    .hero h1{
+        margin: 0;
+        font-size: 2.5em;
+    }
+    h2{
+        color: #e8491d;
+        margin-top: 10px;
+        font-size: 1.5em;
+    }
+    h3{
+        color: #c713f8;
+        margin-top: 10px;
+        font-size: 1.2em;
+    }
+    .cta-button{
+        display: inline-block;
+        background: #ef970a;
+        color: #ec4d9c;
+        padding: 10px 10px;
+        text-decoration: none;
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+    .cta-button:hover{
+        background: #2ee44c;
+        color: #e55ac9;
+    }
+    footer{
+        background: #764974;
+        color: #04a1f5;
+        text-align: center;
+        padding: 10px;
+        margin-top: 10px;
+    }
+    .main{
+        padding: 2.5rem 3 rem;
+    }
+    
+    
