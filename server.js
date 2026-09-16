@@ -128,6 +128,36 @@ res.status(201).send("Account created successfully! you can now log in.");
                 secretMessage:`Welcome to the secure dashboard, ${req.user.username}! Hereb is your private data.`
             });
         });
+        const { body,validatioResult } =require('express-validator');
+
+        app.post('/submit',
+            body('email').isEmail().normalizeEmail(),
+            body('name').trim().escape(),
+            async(res,req) =>{
+                const errors =validatioResult(req);
+                if (!errors.isEmpty()) {
+                    return res.status(400).send("Invalid input data entered.");
+                 }
+                
+            
+                try{
+                    const{username,password} = req.body
+                    const userExits = await User.findOne({username });
+                    if(userExits){
+                        return res.status(400).send("username is already taken.");
+                    }
+
+                    const hashedpassword = await bcrypt.hash(password, 10);
+                    const newUser = new User({username,password: hashedpassword});
+                    await newUser .save();
+
+                    res.status(201).send("Account created successfully! You can now log in.");
+                  }catch (error){
+                    console.error(error);
+                    res.status(500).send("Erorr creating account.");
+                  }
+                });
+                
          app.listen(PORT,()=>{
             console.log(`server running smoothly on port${PORT}`);
          });

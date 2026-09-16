@@ -111,6 +111,10 @@ document.addEventListener("DOMContentLoaded", async()  => {
                     window.location.href = "/login.html";
                 });
             }
+            application.get('/dashboard.html',(res,req)=>{
+
+                res.sendFile(Path2D.join(__dirname,'public', 'dashboard.html'));
+            });
         });
 
     
